@@ -40,3 +40,18 @@ hi! link Delimiter Punctuation
 
 " Bright, saturated green accent for comments
 hi Comment      ctermfg=46      guifg=#00ff5f
+
+" netrw (:E) file browser: folders gray, files white
+hi Directory    ctermfg=248     guifg=#a8a8a8
+hi! link netrwDir Directory
+hi! link netrwClassify Directory
+hi! link netrwExe Normal
+hi! link netrwSymLink Normal
+hi! link netrwPlain Normal
+
+" Keyboard hints in the intro screen and help pages (<Enter>, <F1>, links) - gray, no underline
+hi Underlined           ctermfg=248     guifg=#a8a8a8   cterm=NONE gui=NONE
+hi SpecialKey           ctermfg=248     guifg=#a8a8a8   cterm=NONE gui=NONE
+hi helpSpecial          ctermfg=248     guifg=#a8a8a8
+hi helpHyperTextEntry   ctermfg=248     guifg=#a8a8a8
+hi helpHyperTextJump    ctermfg=248     guifg=#a8a8a8   cterm=NONE gui=NONE
