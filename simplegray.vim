@@ -55,3 +55,16 @@ hi SpecialKey           ctermfg=248     guifg=#a8a8a8   cterm=NONE gui=NONE
 hi helpSpecial          ctermfg=248     guifg=#a8a8a8
 hi helpHyperTextEntry   ctermfg=248     guifg=#a8a8a8
 hi helpHyperTextJump    ctermfg=248     guifg=#a8a8a8   cterm=NONE gui=NONE
+
+" Diff (vimdiff, :diffsplit): red for delete, green for add, white text on dark bg
+hi DiffAdd      ctermfg=15  ctermbg=22  guifg=#ffffff  guibg=#0f3d20  cterm=NONE gui=NONE
+hi DiffChange   ctermfg=15  ctermbg=22  guifg=#ffffff  guibg=#0f3d20  cterm=NONE gui=NONE
+hi DiffDelete   ctermfg=15  ctermbg=52  guifg=#ffffff  guibg=#3d1218  cterm=NONE gui=NONE
+hi DiffText     ctermfg=15  ctermbg=28  guifg=#ffffff  guibg=#1f6b30  cterm=bold gui=bold
+
+" diff/patch filetype (viewing a .diff or .patch buffer)
+hi! link diffAdded    DiffAdd
+hi! link diffRemoved  DiffDelete
+hi! link diffChanged  DiffChange
+hi! link diffLine     Comment
+hi! link diffFile     Type
