@@ -68,3 +68,11 @@ hi! link diffRemoved  DiffDelete
 hi! link diffChanged  DiffChange
 hi! link diffLine     Comment
 hi! link diffFile     Type
+
+" Swift: module names in `import Foundation` etc - grey like the rest of the theme
+hi! link swiftImportModule Type
+
+" Diff-mode UI: fold summaries and columns render dark-blue by default. Match theme.
+hi Folded       ctermfg=248 ctermbg=235  guifg=#a8a8a8 guibg=#242727 cterm=NONE gui=NONE
+hi FoldColumn   ctermfg=248 ctermbg=235  guifg=#a8a8a8 guibg=#242727 cterm=NONE gui=NONE
+hi SignColumn   ctermfg=248 ctermbg=NONE guifg=#a8a8a8 guibg=NONE     cterm=NONE gui=NONE
