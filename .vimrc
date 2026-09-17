@@ -11,4 +11,5 @@ let g:netrw_list_hide='^\.\.\=/\=$'
 let g:netrw_preview = 1
 set clipboard=unnamed
 set regexpengine=2
+set fillchars+=diff:\ 
 colorscheme simplegray
